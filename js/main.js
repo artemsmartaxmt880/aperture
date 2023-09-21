@@ -22,17 +22,16 @@ buregerLink.forEach(a => {
     a.addEventListener('click', burgerLinks)
 })
 // =================================================================
-let image = document.querySelector(".gear__cover-image");
-let images = ["img/gear1.jpg", "img/gear2.jpg", "img/gear3.jpg"];
+let img = document.querySelector(".gear__cover-image");
+let imgList = ["img/gear1.jpg", "img/gear2.jpg", "img/gear3.jpg"];
 let i = 0;
 
-function nextImage() {
-    if (++i >= images.length)
-        i = 0;
+function nextImg() {
+    if (++i == imgList.length) i = 0;
 
-    image.src = images[i];
+    img.src = imgList[i];
 }
-setInterval(nextImage, 5000);
+setInterval(nextImg, 5000);
 
 
 
