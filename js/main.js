@@ -28,7 +28,6 @@ let i = 0;
 
 function nextImg() {
     if (++i == imgList.length) i = 0;
-
     img.src = imgList[i];
 }
 setInterval(nextImg, 5000);
