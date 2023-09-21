@@ -23,15 +23,16 @@ buregerLink.forEach(a => {
 })
 // =================================================================
 let image = document.querySelector(".gear__cover-image");
-let images = ["img/gear1.jpg", "img/gear2.jpg", "img/gear3.jpg"], i = 0;
-let currentPos = 0;
+let images = ["img/gear1.jpg", "img/gear2.jpg", "img/gear3.jpg"];
+let i = 0;
 
 function nextImage() {
-    if (++currentPos >= images.length)
-        currentPos = 0;
+    if (++i >= images.length)
+        i = 0;
 
-    image.src = images[currentPos];
+    image.src = images[i];
 }
 setInterval(nextImage, 5000);
+
 
 
