@@ -1,25 +1,19 @@
-let buregerBtn = document.querySelector('.header__toggle-menu_btn');
-let buregerList = document.querySelector('.header__nav');
-let buregerLink = document.querySelectorAll('.header__link');
-let buregerLinkBtn = document.querySelector('.header__button');
-let buregerLock = document.querySelector('body');
+let burgerBtn = document.querySelector('.header__toggle-menu_btn');
+let burgerList = document.querySelector('.header__nav');
+let burgerLink = document.querySelectorAll('.header__link');
+let burgerLinkBtn = document.querySelector('.header__button');
+let burgerLock = document.querySelector('body');
 
 function burger() {
-    buregerList.classList.toggle('burger');
-    buregerBtn.classList.toggle('burger');
-    buregerLock.classList.toggle('lock');
+    burgerList.classList.toggle('burger');
+    burgerBtn.classList.toggle('burger');
+    burgerLock.classList.toggle('lock');
 };
 
-function burgerLinks() {
-    buregerList.classList.toggle('burger');
-    buregerBtn.classList.toggle('burger');
-    buregerLock.classList.toggle('lock');
-}
-
-buregerBtn.addEventListener('click', burger);
-buregerLinkBtn.addEventListener('click', burgerLinks);
-buregerLink.forEach(a => {
-    a.addEventListener('click', burgerLinks)
+burgerBtn.addEventListener('click', burger);
+burgerLinkBtn.addEventListener('click', burger);
+burgerLink.forEach(a => {
+    a.addEventListener('click', burger)
 })
 // =================================================================
 let img = document.querySelector(".gear__cover-image");
