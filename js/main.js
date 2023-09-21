@@ -10,10 +10,16 @@ function burger() {
     burgerLock.classList.toggle('lock');
 };
 
+function burgerLinks() {
+    burgerList.classList.remove('burger');
+    burgerBtn.classList.remove('burger');
+    burgerLock.classList.remove('lock');
+}
+
 burgerBtn.addEventListener('click', burger);
-burgerLinkBtn.addEventListener('click', burger);
+burgerLinkBtn.addEventListener('click', burgerLinks);
 burgerLink.forEach(a => {
-    a.addEventListener('click', burger)
+    a.addEventListener('click', burgerLinks)
 })
 // =================================================================
 let img = document.querySelector(".gear__cover-image");
