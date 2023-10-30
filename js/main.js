@@ -31,7 +31,3 @@ function nextImg() {
     img.src = imgList[i];
 }
 setInterval(nextImg, 5000);
-
-
-
-
