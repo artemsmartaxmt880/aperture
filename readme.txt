@@ -1,2 +1,1 @@
 
-На form(method = "get").
