@@ -1,8 +1,8 @@
-let burgerBtn = document.querySelector('.header__toggle-menu_btn');
-let burgerList = document.querySelector('.header__nav');
-let burgerLink = document.querySelectorAll('.header__link');
-let burgerLinkBtn = document.querySelector('.header__button');
-let burgerLock = document.querySelector('body');
+const burgerBtn = document.querySelector('.header__toggle-menu_btn');
+const burgerList = document.querySelector('.header__nav');
+const burgerLink = document.querySelectorAll('.header__link');
+const burgerLinkBtn = document.querySelector('.header__button');
+const burgerLock = document.querySelector('body');
 
 function burger() {
     burgerList.classList.toggle('burger');
@@ -22,7 +22,7 @@ burgerLink.forEach(a => {
     a.addEventListener('click', burgerLinks)
 })
 // =================================================================
-let img = document.querySelector(".gear__cover-image");
+const img = document.querySelector(".gear__cover-image");
 let imgList = ["img/gear1.jpg", "img/gear2.jpg", "img/gear3.jpg"];
 let i = 0;
 
